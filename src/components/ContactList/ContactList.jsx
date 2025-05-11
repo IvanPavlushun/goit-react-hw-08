@@ -2,12 +2,11 @@
 import { useSelector } from "react-redux"
 import Contact from "../Contact/Contact"
 import s from "./ContactList.module.css"
-import {  selectError, selectFilteredContacts, selectLoading } from "../../redux/contacts/selectors";
+import {  selectError, selectFilteredContacts } from "../../redux/contacts/selectors";
 
 
 export const ContactList = () => {
   const contacts = useSelector(selectFilteredContacts); 
-  const loading = useSelector(selectLoading); 
   const error = useSelector(selectError);
 
   return (
@@ -17,7 +16,6 @@ export const ContactList = () => {
                  <Contact key={id} id={id}name={name} number={number}/>
               ))}
           </ul>
-{loading &&  <h2>Loading...</h2>}
 {error && <h2>Server is dead...</h2>}
     </div>
   )

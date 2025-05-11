@@ -7,6 +7,7 @@
   .userName {
     font-size: 18px;
     font-weight: bold;
+    color: #333;
   }
   
   .logoutButton {
@@ -23,4 +24,5 @@
   .logoutButton:hover {
     background-color: #e60000;
   }
+  
   
