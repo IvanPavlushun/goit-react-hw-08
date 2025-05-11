@@ -1,0 +1,18 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .search span {
+    margin-bottom: 8px;
+  }
+  
+  .search input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
